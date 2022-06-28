@@ -22,15 +22,25 @@
             <li></li>
 
             <div class="body" >
-                <div class="user" ><span id='u'>You: </span><span id="you"></span></div>
-                <div class="button">
-                    <button type="button" class="btn btn-primary" id="Rock" style=" border: 2px solid rgb(223, 223, 223)">Rock  <i class="fa fa-hand-grab-o fa-rotate-270" style="fill:azure" ></i></button>
-                    <button type="button" class="btn btn-success" id="Paper" style="border: 2px solid rgb(240, 237, 237)">Paper  <i class="fa fa-hand-paper-o fa-rotate-270"></i></button>
-                    <button type="button" class="btn btn-danger" id="Scissors" style="border: 2px solid rgb(240, 237, 237)">Scissors  <i class="fa fa-hand-scissors-o"></i></button>
+                <div class="row no-gutters">
+
+                    <div class="col no-gutters">
+                        <div class="user" ><span id='u' style="color:silver">You: </span><span id="you" ></span></div>
+                        <div class="button">
+                            <button type="button" class="btn btn-primary" id="Rock"  >Rock  <i class="fa fa-hand-grab-o fa-rotate-270" style="fill:azure" ></i></button>
+                            <button type="button" class="btn btn-success" id="Paper" >Paper  <i class="fa fa-hand-paper-o fa-rotate-270"></i></button>
+                            <button type="button" class="btn btn-danger" id="Scissors" >Scissors  <i class="fa fa-hand-scissors-o"></i></button>
+                        </div>
+                        <div class="userScore"><span id='s' style="color:silver">Your Score:  </span><span id="u_score" style="font-size: 70px"></span></h3></span></div>
+                    </div>
+
+                    <div class="col no-gutters">
+                        <div class="com"><span id='c' style="color:silver">Computer: </span><span id="comp"></span></div>
+                <div class="compScore" style="padding-top: 60px;"><span id='s' style="color:silver">Computer Score:  </span><span id="c_score" style="font-size: 70px"></span></h3></span></div>
+                    </div>
+
                 </div>
-                <div class="userScore"><span id='s'>Your Score:</span><span id="u_score"></span></h3></span></div>
-                <div class="com"><span id='c'>Computer: </span><span id="comp"></span></div>
-                <div class="compScore"><span id='s'>Computer Score:</span><span id="c_score"></span></h3></span></div>
+            
                 <div class="res">Result: <span id="result"></span></div>
             </div >
         </ul>

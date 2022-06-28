@@ -12,6 +12,8 @@ font-family: cursive;
 
 .res{
 font-size: larger;
+color:gold;
+padding-top: 100px;
 }
 
 
@@ -38,7 +40,7 @@ font-size: larger;
     font-size: 40px;
     text-align: center;
     margin: auto;
-    font-family:cursive;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .circles li{
