@@ -1,0 +1,13 @@
+Run: npm init @vitejs/app
+
+@vitejs/create-app is deprecated, use npm init vite instead
+
+√ Project name: ... vrCube
+√ Package name: ... vrcube
+√ Select a framework: » vanilla
+√ Select a variant: » vanilla
+
+Run:
+  cd vrCube
+  npm install
+  npm run dev
