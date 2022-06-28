@@ -5,23 +5,36 @@
         <link href="style.css" rel="stylesheet">
         <title>Rock Paper Scissors</title>
         <div class="heading">Rock Paper Scissors</div>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     </head>
     <body>
+        <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
 
-        <div class="body">
-            <div class="user" ><span id='u'>You: </span><span id="you"></span></div>
-            <div class="button">
-                <button type="button" class="btn btn-primary" id="Rock">Rock</button>
-                <button button type="button" class="btn btn-success" id="Paper">Paper</button>
-                <button type="button" class="btn btn-danger" id="Scissors">Scissors</button>
-            </div>
-            
-            <div class="userScore"><span id='s'>Your Score:</span><span id="u_score"></span></h3></span></div>
-            <div class="com"><span id='c'>Computer: </span><span id="comp"></span></div>
-            <div class="res">Result: <span id="result"></span></div>
-        </div>
-
+            <div class="body" >
+                <div class="user" ><span id='u'>You: </span><span id="you"></span></div>
+                <div class="button">
+                    <button type="button" class="btn btn-primary" id="Rock" style=" border: 2px solid rgb(223, 223, 223)">Rock  <i class="fa fa-hand-grab-o fa-rotate-270" style="fill:azure" ></i></button>
+                    <button type="button" class="btn btn-success" id="Paper" style="border: 2px solid rgb(240, 237, 237)">Paper  <i class="fa fa-hand-paper-o fa-rotate-270"></i></button>
+                    <button type="button" class="btn btn-danger" id="Scissors" style="border: 2px solid rgb(240, 237, 237)">Scissors  <i class="fa fa-hand-scissors-o"></i></button>
+                </div>
+                <div class="userScore"><span id='s'>Your Score:</span><span id="u_score"></span></h3></span></div>
+                <div class="com"><span id='c'>Computer: </span><span id="comp"></span></div>
+                <div class="compScore"><span id='s'>Computer Score:</span><span id="c_score"></span></h3></span></div>
+                <div class="res">Result: <span id="result"></span></div>
+            </div >
+        </ul>
         <script src="game.js" charset="UTF-8"></script>
+        
     </body>
 </html>

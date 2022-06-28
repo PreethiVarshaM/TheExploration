@@ -3,8 +3,9 @@ const you = document.getElementById('you')
 const result = document.getElementById('result')
 const choices = document.querySelectorAll('button')
 const u_score = document.getElementById('u_score')
+const c_score = document.getElementById('c_score')
 
-var userScore, compScore
+var userScore = 0, compScore = 0
 
 choices.forEach(choices => choices.addEventListener('click', (e) => {
     you.innerHTML = e.target.id
@@ -29,22 +30,33 @@ function getResult() {
             result.innerHTML = "HURRAY!! You've Got This Round"
             userScore += 1;
         }
-        else result.innerHTML = "OOPS!! Better Luck Next Time"
+        else {
+            result.innerHTML = "OOPS!! Better Luck Next Time"
+            compScore++;
+        }
     }
     else if (c === "Paper") {
         if (y === "Scissors") {
             result.innerHTML = "HURRAY!! You've Got This Round"
             userScore += 1;
         }
-        else result.innerHTML = "OOPS!! Better Luck Next Time"
+        else {
+            result.innerHTML = "OOPS!! Better Luck Next Time"
+            compScore++;
+        }
     }
     else {
         if (y === "Rock") {
             result.innerHTML = "HURRAY!! You've Got This Round"
             userScore += 1;
         }
-        else result.innerHTML = "OOPS!! Better Luck Next Time"
+        else {
+            result.innerHTML = "OOPS!! Better Luck Next Time"
+            compScore++;
+        }
     }
 
-    u_score.innerHTML = userScore.toString()
+    u_score.innerHTML = userScore
+    c_score.innerHTML = compScore
+
 }
