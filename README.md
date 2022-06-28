@@ -1,2 +1,2 @@
 # TheExploration
-This repository contains trials and basic testing on/of various cs based technologies
+This repository contains trials and basic experimentation on/of various cs tools
