@@ -13,7 +13,6 @@ font-family: cursive;
 .res{
 font-size: larger;
 color:gold;
-padding-top: 100px;
 }
 
 
@@ -59,6 +58,7 @@ padding-top: 100px;
     width: 80px;
     height: 80px;
     animation-delay: 0s;
+
 }
 
 
@@ -68,6 +68,7 @@ padding-top: 100px;
     height: 20px;
     animation-delay: 2s;
     animation-duration: 12s;
+
 }
 
 .circles li:nth-child(3){
@@ -75,6 +76,7 @@ padding-top: 100px;
     width: 20px;
     height: 20px;
     animation-delay: 4s;
+
 }
 
 .circles li:nth-child(4){
@@ -83,6 +85,7 @@ padding-top: 100px;
     height: 60px;
     animation-delay: 0s;
     animation-duration: 18s;
+
 }
 
 .circles li:nth-child(5){
@@ -90,6 +93,7 @@ padding-top: 100px;
     width: 20px;
     height: 20px;
     animation-delay: 0s;
+
 }
 
 .circles li:nth-child(6){
@@ -143,7 +147,55 @@ padding-top: 100px;
     100%{
         transform: translateY(-1000px) rotate(720deg);
         opacity: 0;
-        border-radius: 50%;
+        border-radius: 100%;
     }
 
+}
+
+#uE {
+ /* Refers to the name of your @keyframes element below */
+ animation-name: uE-animation;
+ animation-duration: 2.5s;        /* Change to speed up or slow down */
+    animation-iteration-count: infinite;  /* Never stop waving :) */
+      /* Pivot around the bottom-left palm */
+    display: inline-block;
+    font-size: 4em;
+    transform: scale(-1, 1);
+    -moz-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+    transform: scale(-1, 1); 
+  }
+
+  
+  @keyframes uE-animation {
+    
+      0% { transform: rotate( 90.0deg);}
+     10% { transform: rotate(104.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+     20% { transform: rotate(82.0deg) }
+     30% { transform: rotate(104.0deg) }
+     40% { transform: rotate(86.0deg) }
+     50% { transform: rotate(100.0deg) }
+     60% { transform: rotate( 90.0deg) }  /* Reset for the last half to pause */
+    100% { transform: rotate( 90.0deg) }
+  }
+
+  #cE{
+    animation-name: cE-animation;  /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.5s;        /* Change to speed up or slow down */
+    animation-iteration-count: infinite;  /* Never stop waving :) */ 
+    display: inline-block;
+    font-size: 4em
+  }
+
+  @keyframes cE-animation {
+    0% { transform: rotate( 270.0deg) }
+   10% { transform: rotate(284.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+   20% { transform: rotate(262.0deg) }
+   30% { transform: rotate(284.0deg) }
+   40% { transform: rotate(266.0deg) }
+   50% { transform: rotate(280.0deg) }
+   60% { transform: rotate( 270.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 270.0deg) }
 }

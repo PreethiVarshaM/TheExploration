@@ -4,11 +4,16 @@ const result = document.getElementById('result')
 const choices = document.querySelectorAll('button')
 const u_score = document.getElementById('u_score')
 const c_score = document.getElementById('c_score')
+const uE = document.getElementById('uE')
+const cE = document.getElementById('cE')
 
 var userScore = 0, compScore = 0
 
 choices.forEach(choices => choices.addEventListener('click', (e) => {
     you.innerHTML = e.target.id
+    if (you.innerHTML == 'Paper') uE.innerHTML = "✋"
+    else if (you.innerHTML == 'Rock') uE.innerHTML = "✊"
+    else uE.innerHTML = '✌️';
     generateComp()
     getResult()
 }))
@@ -16,9 +21,18 @@ choices.forEach(choices => choices.addEventListener('click', (e) => {
 function generateComp() {
     const rand = Math.floor(Math.random() * 3);
 
-    if (rand === 0) comp.innerHTML = 'Rock'
-    else if (rand === 1) comp.innerHTML = 'Paper'
-    else comp.innerHTML = 'Scissors'
+    if (rand === 0) {
+        comp.innerHTML = 'Rock'
+        cE.innerHTML = "✊";
+    }
+    else if (rand === 1) {
+        comp.innerHTML = 'Paper'
+        cE.innerHTML = '✋';
+    }
+    else {
+        comp.innerHTML = 'Scissors'
+        cE.innerHTML = '✌️';
+    }
 }
 
 function getResult() {

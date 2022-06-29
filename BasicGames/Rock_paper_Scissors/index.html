@@ -22,23 +22,43 @@
             <li></li>
 
             <div class="body" >
-                <div class="row no-gutters">
 
+                <div class="row no-gutters">
                     <div class="col no-gutters">
                         <div class="user" ><span id='u' style="color:silver">You: </span><span id="you" ></span></div>
+                    </div>
+                    <div class="col no-gutters">
+                        <div class="com"><span id='c' style="color:silver">Computer: </span><span id="comp"></span></div>
+                    </div>
+                </div>
+
+                <div class="row no-gutters">
+                    <div class="col no-gutters">
                         <div class="button">
                             <button type="button" class="btn btn-primary" id="Rock"  >Rock  <i class="fa fa-hand-grab-o fa-rotate-270" style="fill:azure" ></i></button>
                             <button type="button" class="btn btn-success" id="Paper" >Paper  <i class="fa fa-hand-paper-o fa-rotate-270"></i></button>
                             <button type="button" class="btn btn-danger" id="Scissors" >Scissors  <i class="fa fa-hand-scissors-o"></i></button>
                         </div>
-                        <div class="userScore"><span id='s' style="color:silver">Your Score:  </span><span id="u_score" style="font-size: 70px"></span></h3></span></div>
                     </div>
+                    <div class="col no-gutters" ></div>
+                </div>
 
+                <div class="row no-gutters">
+                    <div class="col no-gutters" >
+                        <div class="userScore"><span id='s' style="color:silver">Your Score:  </span><span id="u_score" style="font-size: 70px"></span></span></div>
+                    </div>
                     <div class="col no-gutters">
-                        <div class="com"><span id='c' style="color:silver">Computer: </span><span id="comp"></span></div>
-                <div class="compScore" style="padding-top: 60px;"><span id='s' style="color:silver">Computer Score:  </span><span id="c_score" style="font-size: 70px"></span></h3></span></div>
+                        <div class="compScore"><span id='s' style="color:silver">Computer Score:  </span><span id="c_score" style="font-size: 70px"></span></span></div>
                     </div>
+                </div>
 
+                <div class="row no-gutters" id="emoji">
+                    <div class="col no-gutters" >
+                        <div class="userEmoji"><span id='uE' ></span></div>
+                    </div>
+                    <div class="col no-gutters">
+                        <div class="compEmoji"><span id='cE' ></span></div>
+                    </div>
                 </div>
             
                 <div class="res">Result: <span id="result"></span></div>
